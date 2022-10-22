@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #edf2f7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 3rem;
+  background-color: #654fef;
+}
+header h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar img {
+  width: 40px;
+  border-radius: 50%;
+}
+.navbar nav {
+  margin-right: 40px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.15s ease-in;
+}
+.navbar a:hover {
+  color: rgb(27, 27, 27);
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.main {
+  display: flex;
+  margin: 2rem 3rem;
+}
+.main aside {
+  background-color: #fff;
+  height: 600px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 25px;
+  width: 25%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main aside div {
+  background-color: #654fef;
+  width: 100%;
+  height: 110px;
+  margin: 20px 10px;
+  text-align: center;
+  line-height: 110px;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.main main {
+  background-color: #fff;
+  height: 600px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 75%;
+  flex-direction: column;
+}
+.main main img {
+  width: 200px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main main h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #654fef;
+  margin: 2rem 0 3rem;
+}
+.main main p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(27, 27, 27);
+}
+
+.cards {
+  width: calc(100% - 6rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  padding: 20px 0;
+}
+.cards .card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cards .card img {
+  width: 100%;
+}
+.cards .card .card-content {
+  padding: 15px;
+  line-height: 1.5rem;
+  background-color: #fff;
+  height: 30%;
+}
+.cards .card p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: rgb(27, 27, 27);
+}
+.cards .card span {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #654fef;
+}
+
+footer {
+  display: flex;
+  padding: 2rem 3rem;
+  background-color: #654fef;
+  margin-top: 30px;
+}
+footer .summary {
+  width: 50%;
+}
+footer .summary p {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #fff;
+}
+footer .links {
+  padding: 0 5rem;
+}
+footer .links ul {
+  list-style: none;
+}
+footer .links a {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 1.2re;
+  font-weight: bold;
+  color: #fff;
+}
+footer .links a:hover {
+  color: rgb(27, 27, 27);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+    color: #fff;
+  }
+  .navbar {
+    display: none;
+  }
+  .main {
+    flex-direction: column-reverse;
+    margin: 1rem;
+  }
+  .main aside {
+    width: calc(100% - 2rem);
+    margin-bottom: 20px;
+  }
+  .main main {
+    width: calc(100% - 2rem);
+    margin-bottom: 20px;
+    height: 500px;
+  }
+  .main main h2 {
+    font-size: 1.5rem;
+  }
+  .main main p {
+    font-size: 1.3rem;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .summary {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer .links {
+    padding: 0px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
